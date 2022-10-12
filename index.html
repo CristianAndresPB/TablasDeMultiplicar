@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Generador de tablas">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de multiplicar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="cont-logo">
+            <div><h3>Logo</h3></div>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-ul">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Condiciones</a></li>
+        </ul>
+    </nav>
+    <div class="cont-section">
+        <section class="section">
+            <div class="section-head">
+                <h1>Tablas de multiplicar</h1>
+                <p>
+                    <span>Ingrese las tablas de multiplicar que desee</span>
+                </p>
+            </div>
+            <article class="section-body">
+                <form action="server.php" method="post" autocomplete="on" class="form">
+                    <fieldset class="form-fieldset">
+                        <legend>Ingresar datos de la tabla</legend>
+                        <div class="form-control">
+                            <label for="idTabla">Ingrese su tabla: </label>
+                            <input type="number" id="idTabla" required="">
+                        </div>
+                        <div class="form-control">
+                            <label for="idLimite">Ingrese el limite: </label>
+                            <input type="number" id="idLimite" required="">
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Generar tabla" id="idButton">
+                            <input type="button" value="Reiniciar" id="idBtnReiniciar">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+            <section class="section-show">
+                <div class="cont-tables">
+                    <div class="tables"></div>
+                </div>
+            </section>
+    </div>
+        <div class="sub-footer">
+            <address class="footer-address">
+                <span>Por: </span><strong>Cristian Perez</strong>
+            </address>
+        </div>
+        <footer class="footer">
+            <small>Sigan Viendo</small>
+        </footer>
+    </section>
+</body>
+</html>
